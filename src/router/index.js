@@ -4,7 +4,7 @@ import  AboutPage from "@/views/AboutPage.vue"
 import NotFound from "@/views/NotFound.vue"
 const routes = [
   { path: '/', component: HomePage },
-  { path: '/about', component: AboutPage },
+  { path: '/about', name: "About", component: AboutPage },
   { path: "/:catchAll(.*)", component: NotFound },   /* :catchAll является динамическим сегментом и (.*)представляет собой регулярное выражение,
  которое по существу соответствует чему угодно. Поэтому, если ни один из маршрутов выше этого не совпадает, он будет использовать этот.  */
 ]
